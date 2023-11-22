@@ -1,70 +1,106 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+import { bbb } from "../assets/images";
 
-import { shoes, statistics } from "../constants";
-import { Button, ShoeCard } from "../components";
-import { bigShoe1 } from "../assets/images";
-import { arrowRight } from "../assets/icons";
+const Hero = (props) => {
+  const [state, setState] = useState({
+    description: '',
+    location: '',
+    category: '',
+    full_time: false
+  });
 
-const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    if (name === 'full_time') {
+      setState((prevState) => ({ ...state, [name]: !prevState.full_time }));
+    } else {
+      setState({ ...state, [name]: value });
+    }
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    console.log(state);
+    // Add your search logic here
+  };
+
+  const sectionStyle = {
+    backgroundImage: 'url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    border: '3px solid #EBEEF3', // Adjust the border size and color
+    boxShadow: '0 0 20px rgba(255, 255, 255, 0.5)', // Add a box shadow for a subtle glow
+  };
 
   return (
     <section
       id='home'
-      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'
+      className='h-screen flex flex-col gap-6'
+      style={sectionStyle}
     >
-      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28'>
-        <p className='text-xl font-montserrat text-coral-red'>
-          Our Summer collections
-        </p>
-
-        <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
-            The New Arrival
-          </span>
-          <br />
-          <span className='text-coral-red inline-block mt-3'>Nike</span> Shoes
+      <div className=' pt-44 justify-center items-center text-white '>
+        <h2 className='text-3xl  font-bold text-center '>
+          <span className='text-coral-red font-poppins'>Empowering,</span>{' '}
+          <span className=' text-orange-500'>Inspiring,</span> Rising
+        </h2>
+        <h1 className='justify-center items-center text-center text-4xl font-palanquin font-bold '>
+          Recruitment <span className=' text-orange-500'>& </span>Staffing Agency
         </h1>
-        <p className='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
-          Discover stylish Nike arrivals, quality comfort, and innovation for
-          your active life.
-        </p>
-
-        <Button label='Shop now' iconURL={arrowRight} />
-
-        <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
-          {statistics.map((stat, index) => (
-            <div key={index}>
-              <p className='text-4xl font-palanquin font-bold'>{stat.value}</p>
-              <p className='leading-7 font-montserrat text-slate-gray'>
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
       </div>
-
-      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
-        <img
-          src={bigShoeImg}
-          alt='shoe colletion'
-          width={610}
-          height={502}
-          className='object-contain relative z-10'
-        />
-
-        <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
-          {shoes.map((image, index) => (
-            <div key={index}>
-              <ShoeCard
-                index={index}
-                imgURL={image}
-                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
-                bigShoeImg={bigShoeImg}
-              />
+      <div className='flex justify-center items-center mt-12 group-hover:text-white font-semibold text-slate-900 '>
+        <form className="flex" onSubmit={handleSearch}>
+          <div className="md:flex gap-11">
+            <div className="md:w-1/4 px-2">
+              <div className="mb-4">
+                <label htmlFor="description" className="group-hover:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10  shadow-sm " >
+                </label>
+                <input
+                  type="text"
+                  name="description"
+                  value={state.description || ''}
+                  placeholder="Keywords"
+                  onChange={handleInputChange}
+                  className="mt-1 p-2 border rounded-md w-full text-gray-700 "
+                />
+              </div>
             </div>
-          ))}
-        </div>
+            <div className="md:w-1/4 px-2">
+              <div className="mb-4">
+                <label htmlFor="location" className="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10  shadow-sm">
+                </label>
+                <select
+                  name="location"
+                  value={state.location || ''}
+                  onChange={handleInputChange}
+                  className="mt-1 p-2 border rounded-md w-full"
+                >
+                  <option value="">Select Location</option>
+                  {/* Add your location options here */}
+                </select>
+              </div>
+            </div>
+            <div className="md:w-1/4 px-2">
+              <div className="mb-4">
+                <label htmlFor="category" className="focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10  shadow-sm">               
+                </label>
+                <select
+                  name="category"
+                  value={state.category || ''}
+                  onChange={handleInputChange}
+                  className="mt-1 p-2 border rounded-md w-full"
+                >
+                  <option value="">Select Category</option>
+                  {/* Add your category options here */}
+                </select>
+              </div>
+            </div>
+            <div className="md:w-1/4 px-2">
+              <button type="submit" className="btn btn--primary bg-orange-400 text-white p-2 rounded-lg">
+                Search Job
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   );

@@ -2,10 +2,12 @@ import { facebook, instagram, shieldTick, support, truckFast, twitter } from "..
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#products", label: "Products" },
-    { href: "#contact-us", label: "Contact Us" },
+    { href: "#Home", label: "Home", content: ["JobSeeker", "JobConsultancy", "Human Resource"] },
+    { href: "#Page", label: "Page", content: ["About Us", "Services", "Services Detail", "Carrer", "Login", "Register", "Error-404", "Error-405", "Contact Us 01", "Contact us 02"] },
+    { href: "#Jobs", label: "Jobs" , content: ["JobSeeker", "JobConsultancy", "Human Resource"]},
+    { href: "#Employes", label: "Employes" , content: ["JobSeeker", "JobConsultancy", "Human Resource"] },
+    { href: "#Candidates", label: "Candidates" , content: ["JobSeeker", "JobConsultancy", "Human Resource"] },
+    { href: "#Blogs", label: "Blogs" , content: ["JobSeeker", "JobConsultancy", "Human Resource"] },
 ];
 
 export const shoes = [

@@ -47,8 +47,8 @@ const Nav = () => {
           ))}
         </ul>
  
-        <div className='flex items-center text-2xl text-green-900 font-semibold max-lg:hidden'>
-          <a href='/'>Register Here</a>
+        <div className='flex items-center w-32 h-11  border-2 hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold max-lg:hidden focus:ring-4 focus:ring-green-500 focus:ring-opacity-50'>
+          <a href='/'>Register </a>
         </div>
         <div className='hidden max-lg:block'>
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />

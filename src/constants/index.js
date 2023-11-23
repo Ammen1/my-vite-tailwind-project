@@ -1,5 +1,6 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { caticon1, caticon2, caticon3, caticon4, caticon5, caticon6, caticon7, caticon8} from "../assets/images";
 
 export const navLinks = [
     { href: "#Home", label: "Home", content: ["JobSeeker", "JobConsultancy", "Human Resource"] },
@@ -31,27 +32,67 @@ export const statistics = [
     { value: '250k+', label: 'Customers' },
 ];
 
+
+
 export const products = [
     {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        imgURL: caticon1,
+        name: "Finance ",
+        price: "Apply Jobs!",
+        namecompany: "Financial Branch ",
+        job: "100 jobs"
     },
     {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        imgURL: caticon2,
+        name: "Technology",
+        price: "Apply Jobs!",
+        namecompany: "Software, Hardware, SEO ",
+        job: "101 jobs"
     },
     {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        imgURL: caticon3,
+        name: "Agriculture",
+        price: "Apply Jobs!",
+        namecompany: "Agricultural Food Scient",
+        job: "101 jobs"
     },
     {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        imgURL: caticon4,
+        name: "Construction",
+        price: "Apply Jobs!",
+        namecompany: "Marketing Coordinator",
+        job: "120 Jobs"
+
+
     },
+    {
+        imgURL: caticon5,
+        name: "Construction",
+        price: "Apply Jobs!",
+        namecompany: "Marketing Coordinator",
+        job: "120 Jobs"
+    },
+      {
+        imgURL: caticon6,
+        name: "Construction",
+        price: "Apply Jobs!",
+        namecompany: "Marketing Coordinator",
+        job: "120 Jobs"
+    },
+    {
+        imgURL: caticon7,
+        name: "Construction",
+        price: "Apply Jobs!",
+        namecompany: "Marketing Coordinator",
+        job: "120 Jobs"
+    },
+    {
+        imgURL: caticon8,
+        name: "Construction",
+        price: "Apply Jobs!",
+        namecompany: "Marketing Coordinator",
+        job: "120 Jobs"
+    }, 
 ];
 
 export const services = [

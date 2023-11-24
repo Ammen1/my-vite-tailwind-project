@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+  variants: {
+    transitionProperty: ['responsive', 'motion-safe', 'motion-reduce']
+  },
     fontSize: {
       xs: ['12px', '16px'],
       sm: ['14px', '20px'],
@@ -21,6 +24,10 @@ export default {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+       dropShadow: {
+         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+       },
+     
       colors: {
         'primary': "#ECEEFF",
         "coral-red": "#FF6452",
@@ -35,6 +42,7 @@ export default {
         'hero': "url('assets/images/collection-background.svg')",
         'card': "url('assets/images/thumbnail-background.svg')",
       },
+      backgroundColor: ['active'],
       screens: {
         "wide": "1440px"
       }

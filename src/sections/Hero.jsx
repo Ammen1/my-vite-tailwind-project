@@ -94,10 +94,11 @@ const Hero = (props) => {
                 </select>
               </div>
             </div>
-            <div className="md:w-1/2 px-2 flex items-center w-32 h-11  hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold ">
+            <div className="md:w-1/2 px-2 flex items-center w-32 h-11  hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold focus:ring-4 focus:ring-green-900 focus:ring-opacity-500 transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-10 ">
               <button type="submit" className="  text-white p-2 rounded-lg">
                 Search Job
               </button>
+              
             </div>
           </div>
         </form>

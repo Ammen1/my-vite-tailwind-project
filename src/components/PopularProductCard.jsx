@@ -2,8 +2,8 @@ import { star } from "../assets/icons";
 
 const PopularProductCard = ({ imgURL, name, price, namecompany, job }) => {
   return (
-    <div className='flex flex-1 flex-col w-full h-80 mt-20 max-sm:w-full items-center justify-center border-1 bg-white shadow-2xl '>
-      <img src={imgURL} alt={name} className='w-[70px] h-[60px]  border-1 bg-slate-300  mt-3' />
+    <div className='flex flex-1 flex-col w-full h-80 mt-20 max-sm:w-full items-center justify-center border-1 bg-white shadow-2xl hover:accent-emerald-500 transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-1'>
+      <img src={imgURL} alt={name} className='w-[70px] h-[60px]  border-1 bg-slate-300  mt-3 ' />
       <div className='mt-4 flex justify-start'>
         <p className='mt-2 text-xl leading-normal font-semibold font-montserrat'>
           {name}

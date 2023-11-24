@@ -27,7 +27,7 @@ const Nav = () => {
               onMouseEnter={() => setSelectedLabel(item.label)}
               onMouseLeave={() => setSelectedLabel(null)}
             >
-              <a href={item.href} className='font-montserrat font-semibold text-gray-800 hover:text-orange-500'>
+              <a href={item.href} className='font-montserrat font-semibold text-gray-800 hover:text-orange-500 drop-shadow-md md:drop-shadow-xl'>
                 {item.label}
               </a>
               {item.content && item.content.length > 0 && selectedLabel === item.label && (
@@ -47,7 +47,7 @@ const Nav = () => {
           ))}
         </ul>
  
-        <div className='flex items-center w-32 h-11  border-2 hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold max-lg:hidden focus:ring-4 focus:ring-green-500 focus:ring-opacity-50'>
+        <div className='flex items-center w-32 h-11 active:bg-green-500  border-2 hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold max-lg:hidden focus:ring-4 focus:ring-green-900 focus:ring-opacity-500 transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-10'>
           <a href='/'>Register </a>
         </div>
         <div className='hidden max-lg:block'>

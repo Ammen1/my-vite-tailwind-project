@@ -1,6 +1,6 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
-import { caticon1, caticon2, caticon3, caticon4, caticon5, caticon6, caticon7, caticon8} from "../assets/images";
+import { caticon1, caticon2, caticon3, caticon4, caticon5, caticon6, caticon7, caticon8, services01, services02, services03} from "../assets/images";
 
 export const navLinks = [
     { href: "#Home", label: "Home", content: ["JobSeeker", "JobConsultancy", "Human Resource"] },
@@ -97,24 +97,67 @@ export const products = [
 
 export const services = [
     {
-        imgURL: truckFast,
+        imgURL: services01,
         label: "Free shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
-        imgURL: shieldTick,
+        imgURL: services02,
         label: "Secure Payment",
         subtext: "Experience worry-free transactions with our secure payment options."
     },
     {
-        imgURL: support,
+        imgURL: services02,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options."
+    },
+    {
+        imgURL: services02,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options."
+    },
+    {
+        imgURL: services02,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options."
+    },
+    {
+        imgURL: services03,
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
+    {
+        imgURL: services02,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options."
+    },
+    {
+        imgURL: services03,
+        label: "Love to help you",
+        subtext: "Our dedicated team is here to assist you every step of the way."
+    },
+    {
+        imgURL: services02,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options. "
+    },
+    {
+        imgURL: services03,
+        label: "Love to help you",
+        subtext: "Our dedicated team is here to assist you every step of the way."
+    },
+
+
 ];
 
 export const reviews = [
     {
+        imgURL: customer1,
+        customerName: 'Morich Brown',
+        rating: 4.5,
+        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+    },
+        {
         imgURL: customer1,
         customerName: 'Morich Brown',
         rating: 4.5,

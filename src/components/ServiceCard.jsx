@@ -1,15 +1,17 @@
 const ServiceCard = ({ imgURL, label, subtext }) => {
   return (
-    <div className='flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16'>
-      <div className='w-11 h-11 flex justify-center items-center bg-coral-red rounded-full'>
-        <img src={imgURL} alt={label} width={24} height={24} />
+    <div className=' flex flex-row w-1/2 px-4 border-3 rounded-[2px] shadow-xl  py-20 gap-9  bg-white'>
+      <div className='flex justify-center items-center mb-7 px-9 bg-slate-100 '>
+        <img src={imgURL} alt={label} width={500} height={400} className="transition ease-in-out duration-700 hover:transform scale-150 " />
       </div>
-      <h3 className='mt-5 font-palanquin text-3xl leading-normal font-bold'>
+      <div className=" justify-items-center w-full h-full items-center gap-5  ">
+      <h3 className=' font-palanquin text-xl leading-normal font-bold ml-10 hover:transform scale-100 '>
         {label}
       </h3>
-      <p className='mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray'>
+      <p className=' break-words font-montserrat text-lg leading-normal text-slate-gray ml-9 hover:transform scale-100 '>
         {subtext}
       </p>
+      </div>
     </div>
   );
 };

@@ -74,6 +74,6 @@
   position: fixed;
   background-color: white;
   border-radius: 2%;
-  z-index: 1000; /* Ensure Navbar is above other content */
-  /* ... other styling properties ... */
+  z-index: 1000; 
+  
 }

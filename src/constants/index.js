@@ -133,12 +133,12 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/" },
+            { name: "Air ", link: "/" },
             { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Air J", link: "/" },
+            { name: "Air Force ", link: "/" },
+            { name: "Waffle Racer", link: "/" },
+            { name: "Cortez", link: "/" },
         ],
     },
     {
@@ -154,8 +154,8 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "fucking@amen.com", link: "mailto:fucking@amen.com" },
+            { name: "+251 98765435432", link: "tel:+fucking number is here" },
         ],
     },
 ];

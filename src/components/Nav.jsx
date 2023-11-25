@@ -7,9 +7,9 @@ const Nav = () => {
   const [selectedLabel, setSelectedLabel] = useState(null);
 
   return (
-    <header className='px-4 py-2 z-50 w-full fixed bg-orange-50 border-b-2 shadow-2xl'>
+    <header className='px-4 py-2 z-50 w-full fixed bg-orange-50 border-b-2 shadow-xl'>
       <nav className='flex justify-between items-center mb-1'>
-        <a href='/' className='flex items-center'>
+        <a href='/' className='flex items-center ml-8'>
           <img
             src={log2}
             alt='log'
@@ -47,7 +47,7 @@ const Nav = () => {
           ))}
         </ul>
  
-        <div className='flex items-center w-32 h-11 active:bg-green-500  border-2 hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold max-lg:hidden focus:ring-4 focus:ring-green-900 focus:ring-opacity-500 transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-10'>
+        <div className=' mr-8 flex items-center w-32 h-12 active:bg-green-500  border-1 rounded-sm hover:bg-black justify-center text-center bg-orange-500 text-2xl text-white font-semibold max-lg:hidden focus:ring-4 focus:ring-green-900 focus:ring-opacity-500 transition  transition-duration: 500ms ease-in-out transform hover:-translate-x-1 hover:scale-10'>
           <a href='/'>Register </a>
         </div>
         <div className='hidden max-lg:block'>

@@ -1,5 +1,5 @@
 import { copyrightSign } from "../assets/icons";
-import { footerLogo } from "../assets/images";
+import { footerLogo,  log1, log2 } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
@@ -9,16 +9,16 @@ const Footer = () => {
         <div className='flex flex-col items-start'>
           <a href='/'>
             <img
-              src={footerLogo}
+              src={log2}
               alt='logo'
-              width={150}
+              width={70}
               height={46}
-              className='m-0'
+              className='m-0 rounded-full'
             />
           </a>
           <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
-            Get shoes ready for the new term at your nearest Nike store. Find
-            Your perfect Size In Store. Get Rewards
+            Get Job ready for the new term at your nearest Jobs Home. Find
+            Your perfect Job In Country. Get Rewards
           </p>
           <div className='flex items-center gap-5 mt-8'>
             {socialMedia.map((icon) => (

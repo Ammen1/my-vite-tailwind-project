@@ -26,6 +26,9 @@ import caticon5 from './caticon5.png'
 import caticon6 from './caticon6.png'
 import caticon7 from './caticon7.png'
 import caticon8 from './caticon8.png'
+import services01 from './services01.jpg'
+import services02 from './services02.jpg'
+import services03 from './services03.jpg'
 
 import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailShoe1 from './thumbnail-shoe1.svg'
@@ -44,6 +47,9 @@ export {
     caticon6,
     caticon7,
     caticon8,
+    services01,
+    services02,
+    services03,
 
     bigShoe1,
     bigShoe2,

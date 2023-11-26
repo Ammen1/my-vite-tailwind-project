@@ -23,7 +23,7 @@ const App = () => {
       {/* <section className='padding'>
         <SuperQuality />
       </section> */}
-      <section className='padding-x bg-slate-100 '>
+      <section className='padding-x bg-slate-100 flex flex-wrap '>
         <Services />
       </section>
       <section className='padding'>

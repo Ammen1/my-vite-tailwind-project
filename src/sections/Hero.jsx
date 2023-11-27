@@ -37,12 +37,12 @@ const Hero = (props) => {
   return (
     <section
       id='home'
-      className='h-screen flex flex-col'
+      className='h-screen w-screen flex flex-col'
       style={sectionStyle}
      
     >
      
-      <div className=' pt-44 justify-center items-center text-white '>
+      <div className=' pt-44 justify-center items-center text-white w-full h-auto  '>
         <h2 className='text-3xl  font-bold text-center '>
           <span className='text-coral-red font-poppins '>Empowering,</span>{' '}
           <span className=' text-orange-500'>Inspiring,</span> Rising

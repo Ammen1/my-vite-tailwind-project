@@ -7,42 +7,45 @@ const PopularProductCard = ({ imgURL, logoURL, name, price, namecompany, job }) 
 
   return (
     <div
-      className='relative overflow-hidden border-1 bg-white shadow-2xl hover:accent-emerald-500 transition duration-500 ease-out transform hover:-translate-x-1 hover:scale-1'
+      className='relative overflow-hidden border-r-2 border shadow-2xl cursor-default transition-transform transform flex flex-col items-center'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      <img src={imgURL} alt={namecompany} className='w-[65px] h-[55px] border-1 bg-slate-300 mt-8 ' />
       {isHovered ? (
         <>
-          <img src={services01} alt={name} className='border-1 bg-slate-300 ' />
-          <div className='absolute inset-0 flex flex-col justify-center items-center text-center'>
-              <img src={imgURL} alt={namecompany} className='w-[70px] h-[60px] border-1 bg-slate-300 mt-3' />
-            {/* <img src={star} alt="Star" className='' /> */}
-            <p className='mt-2 text-xl leading-normal font-semibold font-montserrat text-white'>
+          <img src={services01} alt={name} className='absolute inset-0 over border-1' />
+          <div className='absolute inset-0 flex flex-col justify-center items-center text-center bg-transparent text-white'>
+            <img src={imgURL} alt={namecompany} className='w-[65px] h-[55px] border-1 bg-slate-300 mt-10' />
+            <p className='mt-2 text-xl leading-normal font-bold font-palanquin'>
               {name}
             </p>
-             <h3 className='mt-2 text-lg leading-normal font-montserrat text-white'>
-            {namecompany}
-          </h3>
-          <h3 className='mt-2 text-sm leading-normal font-semibold font-montserrat text-white'>
-            {job}
-          </h3>
+            <h3 className='mt-2 text-lg leading-normal font-palanquin'>
+              {namecompany}
+            </h3>
+            <h3 className='mt-2 text-sm leading-normal font-semibold font-palanquin'>
+              {job}
+            </h3>
+            <p className='mt-2 font-palanquin text-black text-xl leading-normal'>
+              <span className='text-orange-600'>{price}</span>
+            </p>
+            <img src={star} alt="Star" className='' />
           </div>
         </>
       ) : (
-        <div className='ml-20'>
-          <img src={imgURL} alt={namecompany} className='w-[70px] h-[60px] border-1 bg-slate-300 mt-6 ' />
-          <div className='mt-4 flex justify-start'>
-            <p className='mt-2 text-xl leading-normal font-semibold font-montserrat '>
+        <div className='justify-center items-center text-center'>
+          <div className='mt-4 flex justify-center items-center'>
+            <p className='mt-2 font-palanquin text-xl leading-normal font-semibold text-center'>
               {name}
             </p>
           </div>
-          <h3 className='break-words font-montserrat text-lg leading-normal text-slate-gray mt-2'>
+          <h3 className='break-words font-palanquin text-lg leading-normal text-slate-gray mt-2 text-center'>
             {namecompany}
           </h3>
-          <h3 className='mt-2 text-sm leading-normal font-semibold font-montserrat'>
+          <h3 className='mt-2 text-sm leading-normal font-semibold font-palanquin text-center'>
             {job}
           </h3>
-          <p className='mt-2 font-montserrat text-black text-xl leading-normal'>
+          <p className='mt-2 font-palanquin text-black text-xl leading-normal text-center'>
             {price}
           </p>
         </div>
